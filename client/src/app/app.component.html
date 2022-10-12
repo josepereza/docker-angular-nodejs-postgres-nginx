@@ -1,0 +1,16 @@
+<div>
+  <b>Add a new number: </b>
+  <div class="input">
+    <input [(ngModel)]="number" />
+    <button (click)="addNumber()">Add</button>
+  </div>
+  <div class="numbers">
+    <b>Number list: </b>
+
+    <div *ngFor="let number of numbers">
+      {{ number }}
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
